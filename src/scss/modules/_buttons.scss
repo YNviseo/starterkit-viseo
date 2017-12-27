@@ -1,0 +1,63 @@
+.btn {
+  color:white;
+  text-decoration:none;
+  padding:12px 10px;
+  border-radius:5px;
+  font-size:$font-size-base;
+}
+
+//simple buttons
+.btn-primary {
+  @include button-bg($primary-color , $text-color);
+  @include  border-default(white);
+  @include transition(all  .5s ease-in);
+
+
+}
+
+.btn-secondary {
+  @include button-bg($secondary-color , #000);
+  @include  border-default(black);
+  @include transition(all  .5s ease-in);
+}
+.btn-green {
+  @include button-bg(#2ecc71 , $text-color);
+}
+
+.btn-blue {
+  @include button-bg(#3498db , $text-color);
+}
+
+.btn-yellow{
+  @include button-bg(#f1c40f , $text-color);
+}
+
+.btn-red {
+  @include button-bg(#e74c3c , $text-color);
+}
+
+//Icon Buttons
+.social-icon-btn {
+  text-align:center;
+  font-size:4em;
+  color:$primary-color;
+  display:inline-block;
+  text-decoration:none;
+  width:2em;
+  height:2em;
+  padding:0.5em 0;
+  border-radius:100%;
+  position:relative;
+  text-shadow:0 0.025em 0.025em rgba(0,0,0,0.2);
+  border:0.025em solid rgba(0,0,0,0.05);
+  background-repeat:repeat-x;
+  background-position:0 0;
+  @include transition(all 0.1s linear);
+  &:hover {
+    background-color: $secondary-color;
+    color:$primary-color-darken;
+
+  }
+}
+
+

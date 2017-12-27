@@ -1,0 +1,26 @@
+@mixin button-bg($bg , $text-color) {
+  background: $bg;
+  color: $text-color;
+  &:hover {
+    background: darken($bg, 8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background: darken($bg, 25%);
+  }
+}
+
+@mixin font-awesome($content , $color , $size) {
+  &:after {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $color;
+    font-size: $size;
+    content: '#{$content}';
+  }
+}

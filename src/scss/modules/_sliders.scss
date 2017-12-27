@@ -1,0 +1,58 @@
+
+.full-width-slider {
+  .slick-slide {
+    img {
+      width: 100%;
+    }
+  }
+  .slick-prev {
+    z-index: 1000;
+    left: 0;
+    /**Overide default Style*/
+    &:before {
+      content: '';
+    }
+    @include font-awesome($icon-angle-left, white, 45px);
+  }
+  .slick-next {
+    z-index: 1000;
+    right: 0;
+    @include font-awesome($icon-angle-right, white, 45px);
+    /**Overide default Style*/
+    &:before {
+      content: '';
+    }
+  }
+}
+.carousel {
+  margin: auto;
+  width: 98%;
+  .slick-slide {
+    margin: 0 10px;
+    img {
+      width: 100%;
+    }
+  }
+  .slick-prev {
+    z-index: 1000;
+    left: auto;
+    right: 39px;
+    top: -35px;
+    /**Overide default Style*/
+    &:before {
+      content: '';
+    }
+    @include font-awesome($icon-angle-left, $primary-color, 35px);
+  }
+  .slick-next {
+    z-index: 1000;
+    left: auto;
+    right: 5px;
+    top: -35px;
+    @include font-awesome($icon-angle-right, $primary-color, 35px);
+    /**Overide default Style*/
+    &:before {
+      content: '';
+    }
+  }
+}

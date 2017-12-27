@@ -1,0 +1,6 @@
+@mixin border($direction, $width, $style, $color) {
+  border-#{$direction}: $width $style $color;
+}
+@mixin border-default($color){
+  border: 1px solid $color;
+}
