@@ -4,14 +4,14 @@
 - nodejs - https://nodejs.org/en/download/
 
 # Fork du repository : 
-- lancer la cmmande : "git pull https://github.com/YNviseo/starterkit-viseo.git"
+- lancer la commande : "git clone  https://github.com/YNviseo/starterkit-viseo.git"
 
 # Installation des dépendences
-- lancer la cmmande : "npm install"
--lancer la cmmande : " bower install"
+- lancer la commande : "npm install"
+- lancer la ocmmande : " bower install"
 
 # Build  (Live reload + auto compile des fichiers css et javascript) : 
-- lancer la cmmande : " gulp default"
+- lancer la commande : " gulp default"
 
 # Build css
 - Lancer la commande : "gulp css"
