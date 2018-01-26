@@ -13,7 +13,7 @@ background-color: $primary-color;
   @include align-items(center);
   @include align-content(center);
   @include flex-direction(column);
-  a.btn {
+  a.btn-back {
    position: absolute;
     left:10px;
     top:10px;

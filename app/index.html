@@ -17,7 +17,10 @@
   <link href="assets/components/slick-carousel/slick/slick.css" rel="stylesheet">
   <link href="assets/components/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
   <link href="assets/components/select2/dist/css/select2.min.css" rel="stylesheet">
+
   <script src="assets/components/modernizr/modernizr.js"></script>
+
+
 </head>
 <body>
 
@@ -27,10 +30,12 @@
 
   <section role="banner" class="section" id="header">
     <div class="banner">
-      <a href="/" class="btn btn-primary"> <i class="fa fa-angle-double-left"></i>  Retour</a>
+      <a href="/" class="btn btn-primary btn-back"> <i class="fa fa-angle-double-left"></i> Retour</a>
       <img src="assets/img/logoviseo.png">
+
     </div>
   </section>
+
   <section id="typo" class="section">
     <h3>typography</h3>
     <div class="content typo">
@@ -46,6 +51,7 @@
         PageMaker.</p>
     </div>
   </section>
+
   <section id="buttons" class="section">
     <h3>Simple Buttons</h3>
     <div class="list-buttons content">
@@ -113,6 +119,15 @@
       </ul>
     </div>
   </section>
+  <section class="section" id="charts">
+    <h3>Graphe</h3>
+    <div id="container" style="height: 400px;margin-top:20px;"></div>
+    <div id="drag"></div>
+    <div id="drop"></div>
+  </section>
+
+
+  </div>
   <section id="dropdowns" class="section">
     <h3> Dropdown</h3>
     <div class="box box-container ">
@@ -215,6 +230,60 @@
       </div>
     </div>
   </section>
+  <div class="section" id="accordion">
+    <h3> Horizontal Accordeon</h3>
+    <div class="content">
+      <div id="accordion-horizontal">
+        <div class="accordion-item active">
+          <div class="accordion-question">
+            <h3>Comment puis je cumumer des points rive gauche ?</h3>
+          </div>
+
+          <div class="accordion-response">
+            <p>Vous venez d’atteindre le statut Initié ou Privilégié, félicitations ! Vous allez recevoir prochainement
+              votre nouvelle carte 24 Sèvres et pouvoir bénéficier de nouveaux avantages exclusifs. Vous conservez votre
+              nouveau statut jusqu’au 31 août de l’année qui suit son obtention.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-question">
+            <h3>JE VIENS DE CHANGER DE STATUT, QUE VA-T-IL SE PASSER ? je test le texte</h3>
+          </div>
+
+          <div class="accordion-response">
+            <p>Vous venez d’atteindre le statut Initié ou Privilégié, félicitations ! Vous allez recevoir prochainement
+              votre nouvelle carte 24 Sèvres et pouvoir bénéficier de nouveaux avantages exclusifs. Vous conservez votre
+              nouveau statut jusqu’au 31 août de l’année qui suit son obtention. <strong> je test le texte </strong></p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-question">
+            <h3>QUELLE EST LA DURÉE DE VALIDITÉ DE MES POINTS RIVE GAUCHE ?</h3>
+          </div>
+
+          <div class="accordion-response">
+            <p>Vous venez d’atteindre le statut Initié ou Privilégié, félicitations ! Vous allez recevoir prochainement
+              votre nouvelle carte 24 Sèvres et pouvoir bénéficier de nouveaux avantages exclusifs. Vous conservez votre
+              nouveau statut jusqu’au 31 août de l’année qui suit son obtention.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-question">
+            <h3>VAIS-JE GARDER MON STATUT DE CARTE INITIÉ OU PRIVILÉGIÉ ?</h3>
+          </div>
+
+          <div class="accordion-response">
+            <p>Vous venez d’atteindre le statut Initié ou Privilégié, félicitations ! Vous allez recevoir prochainement
+              votre nouvelle carte 24 Sèvres et pouvoir bénéficier de nouveaux avantages exclusifs. Vous conservez votre
+              nouveau statut jusqu’au 31 août de l’année qui suit son obtention.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="section" id="masonry">
     <h3>Masonry Layout</h3>
 
@@ -791,8 +860,6 @@
 
     </div>
   </section>
-
-
 </main>
 
 
@@ -802,6 +869,9 @@
 <script src="assets/components/imagesloaded/imagesloaded.pkgd.min.js"></script>
 <script src="assets/components/lightbox2/dist/js/lightbox.min.js"></script>
 <script src="assets/components/select2/dist/js/select2.full.min.js"></script>
+<script src="assets/components/highcharts/highcharts.js"></script>
+<script src="assets/components/highcharts/highstock.js"></script>
+
 <script src="assets/js/scripts.min.js"></script>
 
 

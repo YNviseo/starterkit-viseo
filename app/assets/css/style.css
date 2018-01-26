@@ -424,7 +424,7 @@ textarea {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
-  .banner a.btn {
+  .banner a.btn-back {
     position: absolute;
     left: 10px;
     top: 10px; }
@@ -542,7 +542,8 @@ textarea {
   text-decoration: none;
   padding: 12px 10px;
   border-radius: 5px;
-  font-size: 16px; }
+  font-size: 16px;
+  cursor: pointer; }
 
 .btn-primary {
   background: #1b3866;
@@ -2652,6 +2653,58 @@ textarea {
     border: 1px solid white;
     box-shadow: none; }
 
+#accordion-horizontal .accordion-item {
+  border-top: 1px solid #e6e6e6; }
+  #accordion-horizontal .accordion-item:last-child {
+    border-bottom: 1px solid #e6e6e6; }
+  #accordion-horizontal .accordion-item .accordion-question {
+    position: relative;
+    cursor: pointer;
+    padding: 30px 0;
+    transition: all .3s ease-in; }
+    #accordion-horizontal .accordion-item .accordion-question h3 {
+      font-size: 20px;
+      color: #1b3866;
+      max-width: 90%;
+      text-transform: uppercase;
+      transition: all 0.5s ease-in-out; }
+      #accordion-horizontal .accordion-item .accordion-question h3:after {
+        display: inline-block;
+        font: normal normal normal 30px/1 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\f105";
+        transition: all .3s ease-in;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        -ms-transform: translateY(-50%) rotate(0deg);
+            transform: translateY(-50%) rotate(0deg); }
+      #accordion-horizontal .accordion-item .accordion-question h3:hover {
+        color: #c2ba8c; }
+  #accordion-horizontal .accordion-item .accordion-response {
+    opacity: 0;
+    font-size: 16px;
+    overflow: hidden;
+    padding: 0;
+    transition: all 0.5s ease-in-out;
+    height: 0; }
+    #accordion-horizontal .accordion-item .accordion-response p {
+      font-size: 16px;
+      padding: 0 20px; }
+  #accordion-horizontal .accordion-item.active .accordion-question h3 {
+    color: #c2ba8c; }
+    #accordion-horizontal .accordion-item.active .accordion-question h3:after {
+      color: #c2ba8c;
+      -ms-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg); }
+  #accordion-horizontal .accordion-item.active .accordion-response {
+    display: block;
+    opacity: 1;
+    height: auto;
+    padding-bottom: 20px; }
+
 .area {
   display: -ms-flexbox;
   display: flex;
@@ -2746,6 +2799,16 @@ textarea {
 
 .box-row {
   margin-bottom: 1em; }
+
+pre {
+  display: none; }
+  pre.show {
+    display: -ms-flexbox;
+    display: flex; }
+  pre textarea {
+    -ms-flex: 1;
+        flex: 1;
+    min-height: 250px; }
 
 @media print {
   * {

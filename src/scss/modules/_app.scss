@@ -98,3 +98,13 @@ $huge-gray: #000;
   margin-bottom: 1em;
 }
 
+pre {
+  display: none;
+  &.show {
+    display: flex;
+  }
+  textarea {
+   flex:1;
+    min-height: 250px;
+  }
+}
